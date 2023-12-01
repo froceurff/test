@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1670/1670483.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de mot de passe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .password-list {
+            padding: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 1rem 0;
+        }
+
+        li strong {
+            font-weight: bold;
+        }
+
+        .delete-button {
+            background-color: #f44336;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem
+        }
+
+        .delete-button:hover {
+            background-color: #d32f2f;
+        }
+
+        .generate{
+            margin-bottom: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Générateur de mot de passe</h1>
+    </header>
+  <!-- main.html -->
+  <main>
+    <div class="options">
+        <input type="number" id="length" name="length" min="1" max="100" value="10">
+        <input type="text" id="title" name="title" placeholder="Titre du mot de passe">
+    </div>
+    <div class="button-container">
+        <button id="generate">Générer</button>
+    </div>
+    <div class="password-list">
+        <h2>Mots de Passe</h2>
+        <ul id="saved-passwords"></ul>
+    </div>
+</main>
+
+
+    <!-- Barre de navigation -->
+    <div class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="savepassword.html">Mots de passe sauvegardés</a>
+    </div>
+
+    <!-- Ajoutez ceci où vous voulez afficher la notification -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
