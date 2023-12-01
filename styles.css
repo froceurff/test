@@ -1,0 +1,128 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column; /* Changer la direction de flexbox pour empiler les éléments verticalement */
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem; /* Ajout de la marge en bas pour le conteneur des champs de saisie */
+}
+
+input[type="number"] {
+  margin-bottom: 1rem; /* Ajout de la marge en bas pour séparer les champs de saisie */
+}
+
+button {
+  background-color: #4EA3C2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #753d67;
+}
+
+.password-list {
+  padding: 1rem;
+  text-align: center; /* Centrage du contenu dans le conteneur */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem 0;
+}
+
+/* Ajout de styles pour la barre de navigation en bas */
+body {
+  margin-bottom: 50px; /* Ajustez cela pour donner de l'espace à la barre de navigation en bas */
+}
+
+.navbar {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.notification {
+  display: none;
+  position: fixed;
+  top: 860px; /* Ajustez la position verticale selon vos besoins */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #52ad65;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Ajoutez ceci à votre fichier styles.css */
+.delete-button-container {
+  position: fixed;
+  bottom: 70px; /* Ajustez la position verticale selon vos besoins */
+  left: 1300px;
+  z-index: 5;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  padding: 3rem 5rem; /* Ajustez la taille du bouton selon vos besoins */
+  border: none;
+  cursor: pointer;
+  border-radius: 10px; /* Ajout d'un côté arrondi */
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+h2 {
+  margin-bottom: 1rem; /* Ajout de la marge en bas pour le titre */
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 1rem; /* Ajout de la marge en haut pour séparer le bouton des champs de saisie */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
